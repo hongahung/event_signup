@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link href="event_signup.css" rel="stylesheet" type="text/css">
+<title>Top50珠寶設計名家</title>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+<!--[if IE]>
+<link rel="stylesheet" href="set-ie.css" />
+<![endif]-->
+</head>
+
+<body>
+<!--header-->
+<div class="header">
+<!--logo-->
+	<div class="logo">
+		<a href="http://www.4c99.com/">
+			<img src="img/4c99logo.png" alt="4C99珠寶網 好珠寶在這裡"/>
+		</a>
+<!--fb_share-->
+		<div class="fb_share">
+			<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.0";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-like" data-href="http://www.4c99.com/2015momsday/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+</div>
+<!--/fb_share-->
+	</div>
+<!--/logo-->
+</div>
+<!--/header-->
+<!--hero-content-->
+<div class="hero_content">
+	<div class="block">
+		<div class="titleImg">
+			<img src="img/title.png" width="620" height="117" alt=""/>
+		</div>
+		<div class="designer">
+			<img src="img/designer.png" width="1038" height="460" alt=""/>
+		</div>
+	</div>
+</div>
+<!--/hero-content-->
+<!--content-->
+<div class="content">
+ <p class="text4clogo">恭喜您，目前榮登台灣最佳的珠寶設計師名單！
+因此，<img src="img/4c99logo_2.png" width="64" height="22" alt=""/>珠寶網很榮幸為此特別製作專頁，打造一個無國界的網路舞台!
+</p>
+<p class="focus">- 台灣TOP 50珠寶設計師 -</p>
+<p>讓您更多被看見及肯定，請務必重視我們的邀請。如果您願意進一步了解，請填寫以下表格並送出或是聯絡我們<span class="textBlock">( 02 ) 2930-0502</span>分機 <span class="textBlock">111</span>由專人為您服務，謝謝您!</p>
+</div>
+<div class="member_form">
+<div class="formName">回覆表單填寫</div>
+	<form id="member_form" action="" method="post">
+		<ul>
+			<li>
+				<div class="brand_nameTitle">品牌名稱</div>
+				<div class="brand_name">
+					<input type="text" name="brand_name" value="" placeholder="您的品牌" onfocus="this.placeholder = ''" onblur="this.placeholder = '您	的品牌'">
+				</div>
+			</li>
+			<li>
+				<div class="nameTitle">設計師</div>
+				<div class="name">
+					<input type="text" name="name" value="" placeholder="您的姓名" onfocus="this.placeholder = ''" onblur="this.placeholder = '您的姓名'">
+				</div>
+			</li>
+			<li>
+				<div class="mobileTitle">手機</div>
+				<div class="mobile">
+					<input type="text" name="mobile_zone" value="" placeholder="* 前四碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '* 前四碼'" maxlength="4" onKeyUp="">
+					<span>-</span>
+					<input type="text" name="mobile" value="" placeholder="* 後六碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '* 後六碼'" maxlength="6">
+				</div>
+			</li>
+			<li>
+				<div class="phoneTitle">電話</div>
+				<div class="phone">
+					<input type="text" name="phone_zone" value="" placeholder="* 區碼" onfocus="this.placeholder = ''" onblur="this.placeholder = ' * 區碼'" maxlength="3" onKeyUp="store_phone_zone_check()">
+						<span>-</span>
+						<input type="text" name="phone" value="" placeholder="電話號碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '電話號碼'" maxlength="8">
+				</div>
+			</li>
+			<li>
+				<div class="faxTitle">傳真</div>
+				<div class="fax">
+					<input type="text" name="fax_zone" value="" placeholder="* 區碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '* 區碼'">
+					<span>-</span>
+					<input type="text" name="fax" value="" placeholder="傳真號碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '傳真號碼'">
+				</div>
+			</li>
+			<li>
+				<div class="emailTitle">Email：</div>
+				<div class="email">
+					<input type="text" name="email" value="" placeholder="*輸入Email">
+				</div>
+			</li>
+			<li>
+				<div class="addressTitle">地址</div>
+					<div class="addressBlock">
+						<div class="country_info">
+							<select id="city">
+							<option value="">縣市</option>
+							<option value="台北市">台北市</option>
+							<option value="宜蘭縣">宜蘭縣</option>
+							<option value="基隆市">基隆市</option>
+							<option value="連江縣">連江縣</option>
+							<option value="新北市">新北市</option>
+							<option value="苗栗縣">苗栗縣</option>
+							<option value="桃園市">桃園市</option>
+							<option value="新竹市">新竹市</option>
+							<option value="新竹縣">新竹縣</option>
+							<option value="台中市">台中市</option>
+							<option value="南投縣">南投縣</option>
+							<option value="彰化縣">彰化縣</option>
+							<option value="雲林縣">雲林縣</option>
+							<option value="嘉義市">嘉義市</option>
+							<option value="嘉義縣">嘉義縣</option>
+							<option value="台南市">台南市</option>
+							<option value="金門縣">金門縣</option>
+							<option value="高雄市">高雄市</option>
+							<option value="澎湖縣">澎湖縣</option>
+							<option value="台東縣">台東縣</option>
+							<option value="花蓮縣">花蓮縣</option>
+							<option value="屏東縣">屏東縣</option>
+						</select>
+							<select id="region">
+							<option value="">區域</option>
+							<option value="207_萬里區">萬里區</option>
+							<option value="208_金山區">金山區</option>
+							<option value="220_板橋區">板橋區</option>
+							<option value="221_汐止區">汐止區</option>
+							<option value="222_深坑區">深坑區</option>
+							<option value="223_石碇區">石碇區</option>
+							<option value="224_瑞芳區">瑞芳區</option>
+							<option value="226_平溪區">平溪區</option>
+							<option value="227_雙溪區">雙溪區</option>
+							<option value="228_貢寮區">貢寮區</option>
+							<option value="231_新店區">新店區</option>
+							<option value="232_坪林區">坪林區</option>
+							<option value="233_烏來區">烏來區</option>
+							<option value="234_永和區">永和區</option>
+							<option value="235_中和區">中和區</option>
+							<option value="236_土城區">土城區</option>
+							<option value="237_三峽區">三峽區</option>
+							<option value="238_樹林區">樹林區</option>
+							<option value="239_鶯歌區">鶯歌區</option>
+							<option value="241_三重區">三重區</option>
+							<option value="242_新莊區">新莊區</option>
+							<option value="243_泰山區">泰山區</option>
+							<option value="244_林口區">林口區</option>
+							<option value="247_蘆洲區">蘆洲區</option>
+							<option value="248_五股區">五股區</option>
+							<option value="249_八里區">八里區</option>
+							<option value="251_淡水區">淡水區</option>
+							<option value="252_三芝區">三芝區</option>
+							<option value="253_石門區">石門區</option>
+						</select>
+						</div>
+						<div class="city_zipBlock">
+							<div class="city_zipTitle">郵遞區號</div>
+							<div class="city_zip">
+								<input type="text" name="city_zip" value="" >
+							</div>
+						</div>
+						<div class="address">
+						<input type="text" name="address" value="" placeholder="您的詳細地址" onfocus="this.placeholder = ''" onblur="this.placeholder = '您的詳細地址'">
+					</div>
+					</div>
+			</li>
+			<li>
+				<div class="emailTitle">Email：</div>
+				<div class="email">
+					<input type="text" name="email" value="" placeholder="*輸入Email">
+				</div>
+			</li>
+			<li>
+				<div class="qaTitle">
+					Q & A
+				</div>
+				<div class="textarea">
+					<textarea name="textarea" id="textarea" placeholder="*訊息留言"></textarea>
+				</div>
+			</li>
+		</ul>
+			<input type="submit" value="上傳" class="b_btn_green">
+</form>
+</div>
+<!--/content-->
+<!--footer-->
+<div class="footer">4C99珠寶網 版權所有 © 4C99. All Rights Reserved</div>
+<!--/footer-->
+</body>
+</html>
