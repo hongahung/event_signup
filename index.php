@@ -5,11 +5,8 @@
 //-----------------------------------------------------------------------------
 
 //test
-<<<<<<< HEAD
 //test pc
-=======
 //test mac
->>>>>>> origin/master
 
 //程式可存放於任何路徑, 起始皆使用絕對路徑, 執行起始initial.inc.php
 include_once("initial.inc.php");
